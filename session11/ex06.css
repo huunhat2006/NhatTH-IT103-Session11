@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 100px;
+    padding: 20px;
+    line-height: 100px;
+    text-align: center;
+    background-color: rgb(86, 163, 225);
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box1{
+    background-color: rgb(228, 228, 89);
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    width: 33.33%;
+}
+.box2{
+    background-color: rgb(200, 118, 212);
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    width: 33.33%;
+}
+.box3{
+    background-color: rgb(209, 93, 93);
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    width: 33.33%;
+}
+.box4{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: rgb(86, 163, 225);
+    width: 100%;
+}
+.box5{
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+    background-color: rgb(197, 200, 202);
+    width: 100%;
+}
+
+@media screen and (max-width:1200px) {
+    .box1{
+        background-color: rgb(228, 228, 89);
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+        width: 50%;
+        order: 3;
+    }
+    .box2{
+        background-color: rgb(200, 118, 212);
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+        width: 50%;
+        order: 5;
+    }
+    .box3{
+        background-color: rgb(209, 93, 93);
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+        width: 50%;
+        order: 4;
+    }
+    .box4{
+        height: 200px;
+        line-height: 100px;
+        text-align: center;
+        background-color: rgb(86, 163, 225);
+        width: 50%;
+        order: 2;
+    }
+    .box5{
+        height: 300px;
+        line-height: 300px;
+        text-align: center;
+        background-color: rgb(197, 200, 202);
+        width: 100%;
+        order: 1;
+    }
+}
+@media screen and (max-width:768px) {
+main{
+    display: flex;
+    flex-direction: column;
+}
+.box1{
+    background-color: rgb(228, 228, 89);
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    width: 100%;
+    order: 3;
+}
+.box2{
+    background-color: rgb(200, 118, 212);
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    width: 100%;
+    order: 5;
+}
+.box3{
+    background-color: rgb(209, 93, 93);
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    width: 100%;
+    order: 4;
+}
+.box4{
+    height: 200px;
+    line-height: 100px;
+    text-align: center;
+    background-color: rgb(86, 163, 225);
+    width: 100%;
+    order: 2;
+}
+}
